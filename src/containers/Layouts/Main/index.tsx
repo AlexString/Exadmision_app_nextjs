@@ -21,7 +21,7 @@ const Layout = styled.div`
 	}
 	.content {
 		position: relative;
-		padding: 50px 60px;
+		// padding: 0px 60px;
 		height: 100%;
 	}
 `;
