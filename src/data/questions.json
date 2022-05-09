@@ -312,15 +312,15 @@
 		}
 	},
 	{
-		"id": "COMENTARIO formula:hardcode, todas las respuestas son string, formulas",
-		"formula_id": "Imagenes, graficas, potencias, raices, fracciones, preguntas abiertas, etc.",
+		"id": 45,
+		"formula_id": ["Imagenes, graficas, potencias, raices, fracciones, preguntas abiertas, etc."],
 		"description": "respuestas de numeros y de strings",
 		"answers": {
-			"correct": 5,
+			"correct": "5",
 			"wrong": [
-				3,
-				7,
-				15
+				"3",
+				"7",
+				"15"
 			]
 		}
 	}
