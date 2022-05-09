@@ -6,15 +6,24 @@ interface IMainLayoutProps {}
 const MainLayout:FC<IMainLayoutProps> = ({children}) => {
 	return (
 		<Layout>
-			<div>{children}</div>
+			<div className='header'></div>
+			<div className='content'>{children}</div>
 		</Layout>
 	)
 }
 
 const Layout = styled.div`
-	position: relative;
-	padding: 50px 60px;
-	height: 100%;
+	.header {
+		height: 80px;
+		width: 100%;
+		background-color: #006994;
+		box-shadow: 2px 0px 3px;
+	}
+	.content {
+		position: relative;
+		padding: 50px 60px;
+		height: 100%;
+	}
 `;
 
 export default MainLayout

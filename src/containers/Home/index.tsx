@@ -1,4 +1,6 @@
-import Button from "components/block/Button"
+// Components
+import Button from "components/block/Button";
+import Link from 'next/link';
 
 // import * as S from './style'
 import {
@@ -33,9 +35,25 @@ const Home = () => {
           <span>Logo</span>
         </div>
         <div className="app-buttons">
-          <Button textColor="black">Practicar</Button>
-          <Button>Simulacro</Button>
-          <Button>Estadisticas</Button>
+
+          <Link href="/practice">
+            <a>
+              <Button onClick={() => {}}>Practicar</Button>
+            </a>
+          </Link>
+
+          <Link href="/simulacrum">
+            <a>
+              <Button onClick={() => {}}>Simulacro</Button>
+            </a>
+          </Link>
+
+          <Link href="/stadistics">
+            <a>
+              <Button onClick={() => {}}>Estadísticas</Button>
+            </a>
+          </Link>
+
         </div>
       </AppMenu>
 

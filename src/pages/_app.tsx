@@ -29,6 +29,7 @@ const App:FC<IAppProps> = props => {
 
       {/* Layout */}
       <Layout>
+        <GlobalStyles/>
         <Component {...pageProps} />
       </Layout>
 

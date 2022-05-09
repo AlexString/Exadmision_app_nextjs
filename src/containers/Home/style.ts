@@ -34,8 +34,8 @@ export const AppMenu = styled.div`
 
 	.app-buttons {
 		height: 100%;
+		width: 150px;
 		display: flex;
-		align-items: end;
 		flex-direction: column;
 		gap: 20px;
 	}

@@ -18,20 +18,22 @@ const Button:FC<IButtonProps> = props => {
   )
 }
 
-const StyledButton = styled.button`
-  background-color: ${props => props.color ? `${props.color}` : '#EA4C89'};
-  color: ${props => props.textColor ? `${props.textColor}` : '#FFFFFF'};
+const StyledButton = styled.button.attrs(
+  (props: {color: string, textColor: string, colorHover: string}) => props)`
   width: 100%;
+  height: 40px;
 
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
+
   cursor: pointer;
+	// box-shadow: 2px 0px 3px;
+
   display: inline-block;
   font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  height: 40px;
+  font-weight: 700;
   line-height: 20px;
   list-style: none;
   margin: 0;
@@ -45,12 +47,14 @@ const StyledButton = styled.button`
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+
+  background-color: ${props => props.color ? `${props.color}` : '#EA4C89'};
+  color: ${props => props.textColor ? `${props.textColor}` : '#FFFFFF'};
 }
 
   :hover,
   :focus {
     background-color: ${props => props.colorHover ? `${props.colorHover}` : '#F082AC'};
-    // background-color: #F082AC;
   }
 `;
 
