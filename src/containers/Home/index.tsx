@@ -32,7 +32,7 @@ const Home = () => {
 
       <AppMenu>
         <div className="app-logo">
-          <span>Logo</span>
+          <span></span>
         </div>
         <div className="app-buttons">
 

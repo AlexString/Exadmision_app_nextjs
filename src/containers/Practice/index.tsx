@@ -25,8 +25,8 @@ const Practice = () => {
 		<S.Container>
 			<S.QuestionControllerPosition>
 				<div className='controller-buttons'>
-					<Button onClick={() => changeToPrev()}>Prev</Button>
-					<Button onClick={() => changeToNext()}>Next</Button>
+					<Button onClick={() => changeToPrev()}>{'<'}</Button>
+					<Button onClick={() => changeToNext()}>{'>'}</Button>
 				</div>
 			</S.QuestionControllerPosition>
 
